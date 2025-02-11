@@ -13,9 +13,9 @@ public class Estadistica {
     }
 
     //Método para calcular la varianza
-    public static double varianza (double []v) throws Exception {
+    public static double varianza (double []v) throws IllegalArgumentException {
         if(v.length == 0)
-            throw new Exception("Error");
+            throw new IllegalArgumentException();
         double suma = 0;
         double media = mediaAritmetica(v);
 
@@ -26,9 +26,9 @@ public class Estadistica {
     }
 
     //Método para calcular la desviación estándar
-    public static double desviacionEstandar (double []v) throws Exception {
+    public static double desviacionEstandar (double []v) throws IllegalArgumentException {
         if (v.length==0)
-            throw new Exception("Error");
+            throw new IllegalArgumentException();
         return Math.sqrt(varianza(v));
     }
 }
