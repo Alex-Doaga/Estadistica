@@ -14,11 +14,13 @@ class EstadisticaTest {
         double[] vectorPrueba2={5,5,5,5};
         double[] vectorPrueba3={-7,2,-4,6};
         double[] vectorPrueba4=new double[0];
+        double[] vectorPrueba5={0.5,2.6,8,1.5};
         //Falta comprobar vector vacío y elementos negativos//
         assertEquals(2.5,obj.mediaAritmetica(vectorPrueba1));
         assertEquals(5,obj.mediaAritmetica(vectorPrueba2));
         assertEquals(-0.75,obj.mediaAritmetica(vectorPrueba3));
         assertEquals(0,obj.mediaAritmetica(vectorPrueba4));
+        assertEquals(3.15,obj.mediaAritmetica(vectorPrueba5));
     }
 
     @Test
