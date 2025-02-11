@@ -14,6 +14,7 @@ class EstadisticaTest {
         double vectorPrueba2=[5,5,5,5];
         assertEquals(2.5,obj.mediaAritmetica(vectorPrueba1));
         assertEquals(5,obj.mediaAritmetica(vectorPrueba2));
+
     }
 
     @Test
