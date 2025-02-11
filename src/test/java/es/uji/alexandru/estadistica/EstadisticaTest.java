@@ -9,7 +9,7 @@ class EstadisticaTest {
     @Test
     @DisplayName("Test de la media")
     void mediaAritmetica() {
-        as
+        ass
 
     }
 
