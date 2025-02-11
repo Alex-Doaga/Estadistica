@@ -9,8 +9,11 @@ class EstadisticaTest {
     @Test
     @DisplayName("Test de la media")
     void mediaAritmetica() {
-        ass
-
+        Estadistica obj=new Estadistica();
+        double vectorPrueba1=[1,2,3,4];
+        double vectorPrueba2=[5,5,5,5];
+        assertEquals(2.5,obj.mediaAritmetica(vectorPrueba1));
+        assertEquals(5,obj.mediaAritmetica(vectorPrueba2));
     }
 
     @Test
