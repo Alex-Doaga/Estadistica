@@ -3,9 +3,9 @@ package es.uji.alexandru.estadistica;
 public class Estadistica {
 
     //Método para calcular la media
-    public static double mediaAritmetica (double []v){
+    public static double mediaAritmetica (double []v) throws IllegalArgumentException {
         if(v.length == 0)
-            return 0;
+            throw new IllegalArgumentException();
         double suma = 0;
         for (double value : v) suma += value;
 
