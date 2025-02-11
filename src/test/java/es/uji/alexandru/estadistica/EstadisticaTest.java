@@ -16,7 +16,6 @@ class EstadisticaTest {
         double[] vectorPositivos2={5,5,5,5};
         double[] vectorNegativos={-7,2,-4,6};
         double[] vectorDecimales = {0.5,2.6,8,1.5};
-        //Falta comprobar vector vacío y elementos negativos//
         assertThrows(IllegalArgumentException.class, () -> obj.mediaAritmetica(vectorVacio));
         assertEquals(10,obj.mediaAritmetica(vectorUnElemento));
         assertEquals(2.5,obj.mediaAritmetica(vectorPositivos));
