@@ -26,7 +26,9 @@ public class Estadistica {
     }
 
     //Método para calcular la desviación estándar
-    public static double desviacionEstandar (double []v){
+    public static double desviacionEstandar (double []v) throws Exception {
+        if (v.length==0)
+            throw new Exception("Error");
         return Math.sqrt(varianza(v));
     }
 }
