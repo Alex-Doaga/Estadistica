@@ -39,7 +39,15 @@ class EstadisticaTest {
         Estadistica obj=new Estadistica();
         double[] vectorPrueba1={1,2,3,4};
         double[] vectorPrueba2={5,5,5,5};
+        double[] vectorPrueba3={-7,2,-4,6};
+        double[] vectorPrueba4=new double[0];
+        double[] vectorPrueba5={0.5,2.6,8,1.5};
         assertEquals(Math.sqrt(1.25),obj.desviacionEstandar(vectorPrueba1));
         assertEquals(0,obj.desviacionEstandar(vectorPrueba2));
+        assertEquals(Math.sqrt(1.25),obj.desviacionEstandar(vectorPrueba3));
+        assertEquals(Math.sqrt(1.25),obj.desviacionEstandar(vectorPrueba4));
+        assertEquals(Math.sqrt(1.25),obj.desviacionEstandar(vectorPrueba5));
+
+
     }
 }
