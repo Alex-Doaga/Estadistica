@@ -13,9 +13,9 @@ public class Estadistica {
     }
 
     //Método para calcular la varianza
-    public static double varianza (double []v){
+    public static double varianza (double []v) throws Exception {
         if(v.length == 0)
-            return 0;
+            throw new Exception("Error");
         double suma = 0;
         double media = mediaAritmetica(v);
 
